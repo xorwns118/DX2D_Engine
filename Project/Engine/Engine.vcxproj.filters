@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine_Default">
+      <UniqueIdentifier>{b757e44c-a2f7-4960-8cca-5a4643677251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Header">
+      <UniqueIdentifier>{6eb40264-7532-415d-802e-e46b578d3aa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Engine">
+      <UniqueIdentifier>{cee27a0b-1524-4801-941d-547fdc479ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Device">
+      <UniqueIdentifier>{2bfbd3e1-a3e1-4a16-8425-bd5fa897810d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Manager">
+      <UniqueIdentifier>{a743c36c-28fd-4d4b-96ef-c0d042b696b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Level">
+      <UniqueIdentifier>{496bdd15-114a-45d6-b5d0-88b3f0e66e4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06. GameObject">
+      <UniqueIdentifier>{de85093b-c733-4bf4-9bb1-c5f73e66c1ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset">
+      <UniqueIdentifier>{dc1d0e3f-1515-4b15-84cb-21bc2e4d7092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Component">
+      <UniqueIdentifier>{2eb2df8a-e286-4967-a893-61112085705a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HLSL">
+      <UniqueIdentifier>{08f589bf-e15a-40df-9d0c-ecdab93262d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Manager\01. PathMgr">
+      <UniqueIdentifier>{27b0bc3c-f23c-470b-8865-c277d001d8a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Manager\02. TimeMgr">
+      <UniqueIdentifier>{8899b55f-dda5-452e-8824-71cf152b391e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Manager\03. KeyMgr">
+      <UniqueIdentifier>{25b86c12-d6b8-49a8-a1d2-c3ef63129755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Manager\05. TaskMgr">
+      <UniqueIdentifier>{6db52f34-9f90-4167-9f0e-a987ae482ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Component\01. Transform">
+      <UniqueIdentifier>{bc41beb7-a951-48d4-b057-1ca1b89607ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Component\02. MeshRender">
+      <UniqueIdentifier>{3cac40aa-8218-47f7-862d-6a3c48873ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Component\03. Collider">
+      <UniqueIdentifier>{de5d7160-f4e1-4260-8f93-b52bf77176ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset\01. Mesh">
+      <UniqueIdentifier>{36ac0564-3117-42af-b3e7-23daf8458322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset\02. MeshData">
+      <UniqueIdentifier>{e9339f9a-8c88-49bb-9c11-8da45393971a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset\03. Material">
+      <UniqueIdentifier>{5c8d2082-7496-4798-b69b-ce03048097d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset\04. Shader">
+      <UniqueIdentifier>{b3b69a66-2252-4088-bab1-c30dd53612c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset\05. Texture">
+      <UniqueIdentifier>{95cc7967-183d-43f3-b0c1-37308e017d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset\06. Prefab">
+      <UniqueIdentifier>{c164491e-e7ff-4c24-aab8-a17005323714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset\07. Sound">
+      <UniqueIdentifier>{b73b4f44-6c19-47eb-9fda-5e3c4f4f4cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset\08. Sprite">
+      <UniqueIdentifier>{2a5d8457-4705-43ca-a507-d171bc2e2049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Asset\09. Flipbook">
+      <UniqueIdentifier>{f1564741-3ef5-4dd1-8503-6b72e08f0ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Device\ConstBuffer">
+      <UniqueIdentifier>{e9f891f3-b3ce-4a79-998f-f71fb6c1ee9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Manager\04. AssetMgr">
+      <UniqueIdentifier>{aab6cac3-9df4-424f-899d-714f8f4744b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Engine_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Engine_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="enum.h">
+      <Filter>01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="struct.h">
+      <Filter>01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>02. Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMath.h">
+      <Filter>01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="func.h">
+      <Filter>01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>03. Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Engine_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyMgr.h">
+      <Filter>04. Manager\03. KeyMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="PathMgr.h">
+      <Filter>04. Manager\01. PathMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeMgr.h">
+      <Filter>04. Manager\02. TimeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="AMesh.h">
+      <Filter>08. Asset\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Asset.h">
+      <Filter>08. Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="AGraphicShader.h">
+      <Filter>08. Asset\04. Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstBuffer.h">
+      <Filter>03. Device\ConstBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Ptr.h">
+      <Filter>Engine_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetMgr.h">
+      <Filter>04. Manager\04. AssetMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>07. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>06. GameObject</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Engine_Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>02. Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>03. Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Engine_Default</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyMgr.cpp">
+      <Filter>04. Manager\03. KeyMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="PathMgr.cpp">
+      <Filter>04. Manager\01. PathMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeMgr.cpp">
+      <Filter>04. Manager\02. TimeMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="AMesh.cpp">
+      <Filter>08. Asset\01. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Asset.cpp">
+      <Filter>08. Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="AGraphicShader.cpp">
+      <Filter>08. Asset\04. Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstBuffer.cpp">
+      <Filter>03. Device\ConstBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetMgr.cpp">
+      <Filter>04. Manager\04. AssetMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>07. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>06. GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Temp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleMath.inl">
+      <Filter>01. Header</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="std2d.fx">
+      <Filter>HLSL</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
