@@ -46,9 +46,6 @@
     <Filter Include="07. Component\01. Transform">
       <UniqueIdentifier>{bc41beb7-a951-48d4-b057-1ca1b89607ad}</UniqueIdentifier>
     </Filter>
-    <Filter Include="07. Component\02. MeshRender">
-      <UniqueIdentifier>{3cac40aa-8218-47f7-862d-6a3c48873ff7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="07. Component\03. Collider">
       <UniqueIdentifier>{de5d7160-f4e1-4260-8f93-b52bf77176ab}</UniqueIdentifier>
     </Filter>
@@ -84,6 +81,18 @@
     </Filter>
     <Filter Include="04. Manager\04. AssetMgr">
       <UniqueIdentifier>{aab6cac3-9df4-424f-899d-714f8f4744b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Level\Layer">
+      <UniqueIdentifier>{c53455f5-8bd5-4daf-a6d9-62e3da7ef4f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Manager\06. LevelMgr">
+      <UniqueIdentifier>{92c94350-f52d-4423-b80d-111a00e1dbe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Component\RenderComponent">
+      <UniqueIdentifier>{5733ecf5-ceaf-497f-b848-df3a80cf7d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Component\RenderComponent\01. MeshRender">
+      <UniqueIdentifier>{3cac40aa-8218-47f7-862d-6a3c48873ff7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +165,27 @@
     <ClInclude Include="GameObject.h">
       <Filter>06. GameObject</Filter>
     </ClInclude>
+    <ClInclude Include="CTransform.h">
+      <Filter>07. Component\01. Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="components.h">
+      <Filter>01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CMeshRender.h">
+      <Filter>07. Component\RenderComponent\01. MeshRender</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>05. Level\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>05. Level</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelMgr.h">
+      <Filter>04. Manager\06. LevelMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenderComponent.h">
+      <Filter>07. Component\RenderComponent</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -200,7 +230,24 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>06. GameObject</Filter>
     </ClCompile>
-    <ClCompile Include="Temp.cpp" />
+    <ClCompile Include="CTransform.cpp">
+      <Filter>07. Component\01. Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="CMeshRender.cpp">
+      <Filter>07. Component\RenderComponent\01. MeshRender</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>05. Level\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>05. Level</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelMgr.cpp">
+      <Filter>04. Manager\06. LevelMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenderComponent.cpp">
+      <Filter>07. Component\RenderComponent</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="SimpleMath.inl">
