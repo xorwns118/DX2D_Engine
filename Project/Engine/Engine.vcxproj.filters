@@ -46,9 +46,6 @@
     <Filter Include="07. Component\01. Transform">
       <UniqueIdentifier>{bc41beb7-a951-48d4-b057-1ca1b89607ad}</UniqueIdentifier>
     </Filter>
-    <Filter Include="07. Component\03. Collider">
-      <UniqueIdentifier>{de5d7160-f4e1-4260-8f93-b52bf77176ab}</UniqueIdentifier>
-    </Filter>
     <Filter Include="08. Asset\01. Mesh">
       <UniqueIdentifier>{36ac0564-3117-42af-b3e7-23daf8458322}</UniqueIdentifier>
     </Filter>
@@ -93,6 +90,15 @@
     </Filter>
     <Filter Include="07. Component\RenderComponent\01. MeshRender">
       <UniqueIdentifier>{3cac40aa-8218-47f7-862d-6a3c48873ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Component\02. Camera">
+      <UniqueIdentifier>{de5d7160-f4e1-4260-8f93-b52bf77176ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Component\Script">
+      <UniqueIdentifier>{63a01f3d-4f7b-4cf3-a2d2-3bdd6956a983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Component\Script\Player">
+      <UniqueIdentifier>{ff6b7813-76eb-4074-965d-79cfa515bd36}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -186,6 +192,15 @@
     <ClInclude Include="CRenderComponent.h">
       <Filter>07. Component\RenderComponent</Filter>
     </ClInclude>
+    <ClInclude Include="CCamera.h">
+      <Filter>07. Component\02. Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CScript.h">
+      <Filter>07. Component\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerScript.h">
+      <Filter>07. Component\Script\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -247,6 +262,18 @@
     </ClCompile>
     <ClCompile Include="CRenderComponent.cpp">
       <Filter>07. Component\RenderComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="CCamera.cpp">
+      <Filter>07. Component\02. Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="extern.cpp">
+      <Filter>01. Header</Filter>
+    </ClCompile>
+    <ClCompile Include="CScript.cpp">
+      <Filter>07. Component\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerScript.cpp">
+      <Filter>07. Component\Script\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

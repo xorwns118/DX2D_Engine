@@ -4,8 +4,10 @@
 // 상수 레지스터
 cbuffer TRANSFORM : register(b0)
 {
-    float4 g_ObjPos;
-    float4 g_ObjScale;
+    // 열 기준이기 때문에 행 기준으로 바꾸는 row_major 키워드 사용
+    row_major Matrix g_matWorld;    // 물체의 위치, 크기, 회전 정보를 담은 행렬
+    row_major Matrix g_matView;     // 카메라가 기준이 되는 좌표계로 이동시키는 행렬
+    row_major Matrix g_matProj;     // View 공간에 있는 좌표를 2차원으로 투영
 }
 
 // HLSL 5.0 기준 문법
@@ -34,17 +36,23 @@ struct VS_OUT
 VS_OUT VS_Std2D(VS_IN _in)
 {
     VS_OUT output = (VS_OUT) 0.f;
-        
-    // 모델을 오브젝트 위치로 변경하는 순서
-    // 크기 -> 이동    
-    output.vPosition = float4((_in.vPos * g_ObjScale.xyz) + g_ObjPos.xyz, 1.f);
+    
+    // Local -> World
+    float4 vWorldPos = mul(float4(_in.vPos, 1.f), g_matWorld);
+    // World -> View
+    float4 vViewPos = mul(vWorldPos, g_matView);
+    // View -> Projection (NDC 좌표계 변환)
+    float4 vProjPos = mul(vViewPos, g_matProj);
+    
+    output.vPosition = vProjPos;
+    output.vColor = _in.vColor;
     
     return output;
 }
 
 float4 PS_Std2D(VS_OUT _in) : SV_Target
 {
-    return float4(0.f, 1.f, 0.f, 1.f);
+    return _in.vColor;
 }
 
 // UTF-8 로 인코딩 되어야 인식 가능
